@@ -125,8 +125,6 @@ namespace Task1_POE
             display = display + "Y position: " + y.ToString() + "\n" +"\n";
             display = display + "Spawn X: " + spawnPointX.ToString()+ "\n";
             display = display + "Spawn Y: " + spawnPointY.ToString() + "\n";
-
-
             return display;
         }
 

@@ -24,17 +24,11 @@ namespace Task1_POE
         public void NewBattlefield()
         {
 
-
-            //Map GameMap = new Map();
             Random r = new Random();
-
-
             int melee = 5;
             int ranged = 5;
             int countM = 0;
             int count = 0;
-
-
             
             for (int i =0; i < 2; i++)
             {
@@ -138,18 +132,13 @@ namespace Task1_POE
                 {
                     unitMap[x, y] = "";
                 }
-            }
-
-          
+            }         
             // mover units to new location in 2d array
         }
 
         public string Update(int X, int Y)
         {
-
-          
-
-            return unitMap[X,Y];
+         return unitMap[X,Y];
             // show the new map in the lable
         }
 

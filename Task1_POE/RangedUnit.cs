@@ -16,7 +16,6 @@ namespace Task1_POE
 
         }
         
-
         public int X
         {
             get { return x; }
@@ -43,14 +42,11 @@ namespace Task1_POE
             set { health = value; }
         }
 
-
         public int Speed
         {
             get { return speed; }
             set { speed = value; }
         }
-
-
 
         public int Attack
         {
@@ -58,23 +54,17 @@ namespace Task1_POE
             set { attack = value; }
         }
 
-
-
         public int AttackRange
         {
             get { return attackRange; }
             set { attackRange = value; }
         }
 
-
-
         public string Team
         {
             get { return team; }
             set { team = value; }
         }
-
-
 
         public char Symbol
         {
@@ -93,17 +83,16 @@ namespace Task1_POE
             Archer.Speed = 1;
             Archer.AttackRange = 4;
 
-            // MessageBox.Show(r.ToString());
             switch (team)
             {
                 case 1:
                     Archer.team = "Blue";
-                    //   teamColour="Blue";
+                  
                     break;
 
                 case 2:
                     Archer.team = "Yellow";
-                    // teamColour = "Green";
+                   
                     break;
 
             }// team assigning
@@ -111,7 +100,6 @@ namespace Task1_POE
             Archer.Attack = 4;
             Archer.Symbol = 'S';
 
-            // MessageBox.Show(soldier.ToString());
             return Archer;
         }
 
@@ -138,12 +126,6 @@ namespace Task1_POE
                     y = y - speed;
                 }
             }
-
-
-
-
-
-
 
         }// movement
 
@@ -179,9 +161,6 @@ namespace Task1_POE
 
             }
 
-
-
-            //MessageBox.Show(distance.ToString() + enemy.ToString());
             return distance;
 
         }
@@ -207,10 +186,7 @@ namespace Task1_POE
            
             int distance = 0;
             int distancer = 0;
-            
-          
-
-           
+                
                 foreach (MeleeUnit u in enemyM)
                 {
                 if (u != null)
@@ -238,8 +214,6 @@ namespace Task1_POE
                     }
                 }
                   
-
-
                 }
             count = 0;
                 foreach (RangedUnit u in enemyR)
@@ -269,8 +243,6 @@ namespace Task1_POE
                     }
                 }
                   
-
-
                 }
 
             if (distance> distancer)
@@ -281,7 +253,6 @@ namespace Task1_POE
             {
                 return MEnemy;
             }
-
 
         }
 
@@ -298,7 +269,7 @@ namespace Task1_POE
             Info = Info + "Team" + team + "\n";
             Info = Info + "Symbol: " + symbol + "\n";
             return Info;
-        }//
+        }
 
         public override void Save()
         {

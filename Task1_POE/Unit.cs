@@ -22,7 +22,6 @@ namespace Task1_POE
         protected char symbol;
         protected bool alive;
         //methods
-        // need constructor
         abstract public Unit constuctor(int rx, int ry, int team);
         abstract public void MoveUnit(int x, int y);
         abstract public void Combat( Unit Enemy);
@@ -32,9 +31,6 @@ namespace Task1_POE
         abstract public string ToString();
         abstract public void Save();
 
-        //abstract public int GetRange();
-        //abstract public bool InCombat();
-       // abstract public int HealthP();
     }
 
    

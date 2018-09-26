@@ -37,46 +37,35 @@ namespace Task1_POE
             set { y = value; }
         }
 
-        
-
         public int Health
         {
             get { return health; }
             set { health = value; }
         }
-
-     
+    
         public int Speed
         {
             get { return speed; }
             set { speed = value; }
         }
 
-     
-
         public int Attack
         {
             get { return attack; }
             set { attack = value; }
         }
-
-     
-
+    
         public int AttackRange
         {
             get { return attackRange; }
             set { attackRange = value; }
         }
 
-
-
         public string Team
         {
             get { return team; }
             set { team = value; }
         }
-
-    
 
         public char Symbol
         {
@@ -95,7 +84,6 @@ namespace Task1_POE
             soldier.Speed = 1;
             soldier.AttackRange = 2;
 
-            // MessageBox.Show(r.ToString());
             switch (team)
             {
                 case 1:
@@ -135,13 +123,6 @@ namespace Task1_POE
                 {
                     y = y - speed;
                 }
-           
-
-                
-            
-
-            
-
 
         }// movement
 
@@ -177,9 +158,6 @@ namespace Task1_POE
 
             }
 
-
-
-            //MessageBox.Show(distance.ToString() + enemy.ToString());
             return distance;
 
         }
@@ -202,12 +180,9 @@ namespace Task1_POE
             MeleeUnit MEnemy = null ;
             RangedUnit rEnemy = null;
             int count = 0;
-           // int countm = 0;
             int distance =0;
             int distancer = 0;
-           // bool ranged = false;
-           
-            
+                     
                 foreach (MeleeUnit u in enemyM)
                 {
                 if (u != null)
@@ -237,8 +212,6 @@ namespace Task1_POE
                     }
                 }
                    
-
-
                 }
 
             count = 0;
@@ -263,9 +236,7 @@ namespace Task1_POE
                                 {
                                     distancer = (((Math.Abs(x) - Math.Abs(u.X)) + (Math.Abs(y) - Math.Abs(u.Y))));
                                     rEnemy = u;
-                                    // ranged = true;
                                 }
-
 
                             }
                         }
@@ -299,7 +270,7 @@ namespace Task1_POE
             Info = Info + "Team" + team + "\n";
             Info = Info + "Symbol: " + symbol + "\n";
             return Info;
-        }// done
+        }
 
         public override void Save()
         {
